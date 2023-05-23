@@ -20,7 +20,7 @@ The scripts are divided into two components:
     run_real_time.sh
     ```
 ## NOTES
-- The model was developed using Tensorflow/Keras.
+- The real-time framework supports ONNX (pytorch/tensorflow models can be converted to onnx format).
 
 - The real-time framework incorporates the use of OpenGL to leverage hardware acceleration for efficient graphical augmentation.
 
