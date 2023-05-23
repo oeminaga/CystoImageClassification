@@ -12,11 +12,13 @@ from registeries import model_registry, preprocess_registry
 import argparse
 par=argparse.ArgumentParser()
 par.add_argument("--video_source", type=str, default="", help="Video source either a file name or a camera index (e.g., 0).")
-par.add_argument("-c","--ask_case_id", action='store_true' )
+par.add_argument("-c","--ask_case_id", action='store_true', help="provide a case id for the video source at the beginning.")
 args = par.parse_args()
 if __name__=="__main__":
     try:
         video_source=args.video_source
+        if str.isdigit(video_source):
+            video_source=int(video_source)
         cap = cv2.VideoCapture(video_source)
         fps_=cap.get(cv2.CAP_PROP_FPS)
         width = int(cap.get(3))
@@ -57,10 +59,10 @@ if __name__=="__main__":
                                                                     negative_label=manager.model_infos["negative_label"],
                                                                     labels=manager.model_infos["labels"],
                                                                     threshold=manager.model_infos["threshold"])
-
+    #Addons - function blocks-commands for the GUI. You can add your own addons if you follow the same class abstract.
     cmd_lst = [
-        utils.ModePrediction(name="AI_Detection",filename=manager.result_filename,edges=edges,model=ModelForDetection,preprocess=preprocess_registry[manager.model_infos["PreprocessFunction"]], input_size=manager.model_infos["input_size"], color=None, thickness=None, TypeOfDetectionProblem=manager.model_infos["TypeOfDetectionProblem"], ShowOnlyPositiveAlert=manager.model_infos["ShowOnlyPositiveAlert"], PlaySound=manager.model_infos["PlaySound"])
-        #utils.VideoRecoder(name="VideoRecoder", filename=manager.video_filename,shape=(width,height), fps=fps_)
+        utils.ModePrediction(name="AI_Detection",filename=manager.result_filename,edges=edges,model=ModelForDetection,preprocess=preprocess_registry[manager.model_infos["PreprocessFunction"]], input_size=manager.model_infos["input_size"], color=None, thickness=None, TypeOfDetectionProblem=manager.model_infos["TypeOfDetectionProblem"], ShowOnlyPositiveAlert=manager.model_infos["ShowOnlyPositiveAlert"], PlaySound=manager.model_infos["PlaySound"]),
+        utils.VideoRecoder(name="VideoRecoder", filename=manager.video_filename,shape=(width,height), fps=fps_)
     ]
     #Initiate GUI
     GUI_mmanager=GUI.WindowVisualization(

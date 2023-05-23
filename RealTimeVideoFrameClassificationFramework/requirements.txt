@@ -10,3 +10,7 @@ pyyaml
 onnxruntime
 vidgear
 numba
+keras_cv
+tensorflow
+tensorflow-addons
+tensorflow-probability
