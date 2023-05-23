@@ -12,6 +12,6 @@ The scripts are divided into two components:
 ## NOTES
 - The model was developed using Tensorflow/Keras.
 
-- The real-time framework incorporates the use of OpenGL to leverage hardware acceleration for efficient graphical rendering.
+- The real-time framework incorporates the use of OpenGL to leverage hardware acceleration for efficient graphical augmentation.
 
 - You need to convert the tensorflow format to ONNX format for a better performance and deployment.
