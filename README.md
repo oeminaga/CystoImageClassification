@@ -15,3 +15,8 @@ The scripts are divided into two components:
 - The real-time framework incorporates the use of OpenGL to leverage hardware acceleration for efficient graphical augmentation.
 
 - You need to convert the tensorflow format to ONNX format for a better performance and deployment.
+
+------
+## Please cite when use this framework in your work
+
+
