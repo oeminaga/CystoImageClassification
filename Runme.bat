@@ -1,0 +1,1 @@
+conda activate base && python main.py --video_source .\output\538_O_02152022\Videos\538_O_02152022.mp4 -c

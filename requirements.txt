@@ -1,0 +1,12 @@
+Pillow
+PyOpenGL
+pygame
+pandas
+seaborn
+scikit-learn
+joblib
+opencv-python
+pyyaml
+onnxruntime
+vidgear
+numba

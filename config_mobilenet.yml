@@ -1,0 +1,15 @@
+to_store: "./output/"
+model:
+  name: ModelOnnx
+  path: "./models/mobilenet/mobilenet.onnx"
+  input_size : [300,300]
+  positive_label: ["Cancer"]
+  negative_label: ["BladderNormal"]
+  threshold: 10
+  IncludeHeatMap: false
+  labels : {'BladderNormal':0,'BladderWallAlteration':1,'Diverticulum':2,'AbnormalVesselsBleeding':3,'Stones':4,'Inflammation':6,'Cancer':5}
+  ShowOnlyPositiveAlert: false
+  PlaySound: true
+  TypeOfDetectionProblem: single_frame_classification
+  PreprocessFunction: EminagaAlgorthimPreprocess
+  ModelPreprocessFunction: None
