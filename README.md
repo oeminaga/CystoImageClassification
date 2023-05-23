@@ -10,12 +10,12 @@ The scripts are divided into two components:
 ```
 
 - To Run, there are two options:
-1. Process a folder with cystoscopy videos
+-- Process a folder with cystoscopy videos
 ```
 run_exp.sh
 ```
 
-2. Real-time from a video input 
+-- Real-time from a video input 
 ```
 run_real_time.sh
 ```
