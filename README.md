@@ -26,7 +26,7 @@ The scripts are divided into two components:
 
 - You need to convert the tensorflow format to ONNX format for a better performance and deployment.
 
-
+- CycleGAN was used to optimize the color space for the development set.
 ------
 ##### If you have issues, please open a thread
 ##### Please cite when use this framework in your work
