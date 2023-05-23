@@ -28,6 +28,7 @@ The scripts are divided into two components:
 
 
 ------
+##### If you have issues, please open a thread
 ##### Please cite when use this framework in your work
 
 
