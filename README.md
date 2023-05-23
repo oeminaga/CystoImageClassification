@@ -9,7 +9,7 @@ The scripts are divided into two components:
     ./install_packages.sh
 ```
 
-- To Run, there are two options:
+- To Run, there are two options:</br>
 -- Process a folder with cystoscopy videos
 ```
 run_exp.sh
