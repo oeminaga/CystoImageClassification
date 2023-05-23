@@ -10,15 +10,15 @@ The scripts are divided into two components:
 ```
 
 - To Run, there are two options:</br>
--- Process a folder with cystoscopy videos
-```
-run_exp.sh
-```
+    Process a folder with cystoscopy videos
+    ```
+    run_exp.sh
+    ```
 
--- Real-time from a video input 
-```
-run_real_time.sh
-```
+    Real-time from a video input 
+    ```
+    run_real_time.sh
+    ```
 ## NOTES
 - The model was developed using Tensorflow/Keras.
 
