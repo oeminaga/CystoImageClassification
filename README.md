@@ -2,7 +2,7 @@
 ------
 The scripts are divided into two components:
 1. Model training and evaluation
-2. Real-time Illumination adapted Bladder Lesion Detection Framework for Cystoscopic Videos.
+2. Real-time Illumination adapted Bladder Lesion Detection Framework for Cystoscopy Videos.
 
 - To install, we will need python installed; some python packages are required and can be installed by running the following command line:
 ```
