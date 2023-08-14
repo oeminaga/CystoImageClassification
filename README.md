@@ -29,6 +29,6 @@ The scripts are divided into two components:
 - CycleGAN was used to optimize the color space for the development set.
 ------
 ##### If you have issues, please contact us or open a thread in the issues section.
-##### Please cite when use this framework in your work [Currently under review]
+##### Please cite when use this framework in your work [Accepted]
 
 
