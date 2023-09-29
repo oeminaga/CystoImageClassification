@@ -29,6 +29,10 @@ The scripts are divided into two components:
 - CycleGAN was used to optimize the color space for the development set.
 ------
 ##### If you have issues, please contact us or open a thread in the issues section.
-##### Please cite when use this framework in your work [Accepted]
+##### Please cite when use this framework in your work:
+Efficient Augmented Intelligence Framework for Bladder Lesion Detection
+Okyaz Eminaga, Timothy Jiyong Lee, Mark Laurie, T. Jessie Ge, Vinh La, Jin Long, Axel Semjonow, Martin Bogemann, Hubert Lau, Eugene Shkolyar, Lei Xing, and Joseph C. Liao
+JCO Clinical Cancer Informatics 2023 :7 
+
 
 
